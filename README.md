@@ -1,4 +1,4 @@
-# 🏭 Manufacturing Analysis Dashboard
+# 🏭 Production Performance Analytics System
 
 ## 📌 Project Overview
 
