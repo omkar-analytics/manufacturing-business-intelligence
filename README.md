@@ -160,7 +160,6 @@ pandas
 numpy
 matplotlib
 seaborn
-openpyxl
 ```
 
 ---
