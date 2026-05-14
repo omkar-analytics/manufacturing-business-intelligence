@@ -1,143 +1,322 @@
-# manufacturing-business-intelligence
-Industry-level Manufacturing Analytics project focused on production efficiency, rejection analysis, machine performance, and operational KPIs using Power BI, Tableau, Python, Excel, and SQL.
-# 🏭 Manufacturing Operations Analytics Dashboard
-### End-to-End Business Intelligence & Production Performance Analysis
-📖 Project Overview
+# 🏭 Manufacturing Analysis Dashboard
 
-This project focuses on analyzing manufacturing operations data to improve production efficiency, monitor machine performance, reduce rejection rates, and optimize operational processes.
+## 📌 Project Overview
 
-The solution was developed using modern Business Intelligence and Data Analytics techniques by integrating:
+The Manufacturing Analysis Dashboard is an end-to-end data analytics project designed to analyze manufacturing operations, production efficiency, machine utilization, delivery performance, and operational costs.
 
-SQL for data extraction
-Python for data cleaning and preprocessing
-Excel for validation and reporting
-Power BI for interactive dashboards
-Tableau for advanced data storytelling
+This project combines multiple analytics tools including Python, SQL, Excel, Power BI, and Tableau to transform raw manufacturing data into meaningful business insights and interactive dashboards.
 
-The dashboard enables stakeholders to monitor critical manufacturing KPIs and make data-driven operational decisions.
+The dashboard helps stakeholders monitor:
 
-🏭 Business Problem Statement
+* Production performance
+* Machine efficiency
+* Department-wise operations
+* Delivery status
+* Employee productivity
+* Operational costs
+* Buyer and customer analysis
 
-Manufacturing companies generate massive amounts of operational data daily, but raw data alone cannot improve business performance.
+---
 
-The organization faced challenges such as:
+# 🚀 Project Objectives
 
-High rejection quantities
-Production inefficiencies
-Delayed work orders
-Lack of centralized KPI monitoring
-Difficulty tracking machine performance
-Poor visibility into production bottlenecks
+* Analyze overall manufacturing production performance
+* Track machine utilization and operational efficiency
+* Monitor department-wise production metrics
+* Evaluate delivery performance and delays
+* Identify high-performing operations and employees
+* Build interactive dashboards for business decision-making
+* Perform data cleaning, transformation, and KPI analysis
 
-The objective was to build a centralized analytics solution that converts raw manufacturing data into actionable business insights.
+---
 
-🎯 Objectives
-Analyze manufacturing production performance
-Monitor rejection and shortage rates
-Track machine utilization and efficiency
-Identify production bottlenecks
-Improve operational decision-making
-Build interactive dashboards for stakeholders
-Enable KPI-driven manufacturing management
-🗂 Dataset Information
+# 🛠️ Tools & Technologies Used
 
-The dataset contains detailed manufacturing operational records, including:
+| Tool     | Purpose                           |
+| -------- | --------------------------------- |
+| Python   | Data Cleaning & Data Analysis     |
+| SQL      | Data Extraction & KPI Queries     |
+| Excel    | Data Preparation & Validation     |
+| Power BI | Interactive Dashboard Development |
+| Tableau  | Data Visualization & Storytelling |
 
-Key Dataset Fields
-Work Order Details
-Machine Information
-Production Quantity
-Rejected Quantity
-Processed Quantity
-Department Information
-Employee Information
-Delivery Dates
-Shift Information
-Production Cost
-Work Centre Details
-Fiscal Dates
-Manufacturing Status
-Main Metrics Available
-Manufactured Qty
-Rejected Qty
-Produced Qty
-Processed Qty
-Balance Qty
-Total Value
-Machine Cost
-WO Qty
-🛠 Tools & Technologies Used
-Tool	Purpose
-Python	Data Cleaning & Preprocessing
-SQL	Data Extraction & Querying
-Excel	Data Validation & Reporting
-Power BI	Dashboard Development
-Tableau	Data Visualization & Storytelling
-🧹 Data Cleaning Process
-Data preprocessing activities performed:
-Removed duplicate records
-Handled null/missing values
-Standardized date formats
-Cleaned inconsistent column names
-Corrected datatype mismatches
-Created calculated fields
-Processed fiscal date formats
-Optimized data model relationships
-Removed invalid production records
-📊 Data Analysis Process
-Steps followed in the analytics workflow:
-Data Collection
-SQL Data Extraction
-Data Cleaning using Python & Excel
-Exploratory Data Analysis (EDA)
-KPI Calculation
-Dashboard Design
-Business Insight Generation
-Performance Optimization
-Final Reporting & Visualization
-📈 KPIs & Metrics
-Core Manufacturing KPIs
-Total Manufactured Quantity
-Total Rejected Quantity
-Production Efficiency %
-Machine Utilization Rate
-Work Order Completion Rate
-Daily Production Trend
-Department-wise Production
-Rejection Percentage
-Processed Quantity
-Balance Quantity
-Manufacturing Cost Analysis
-Shift-wise Performance
-Delivery Performance
-📌 Dashboard Features
-Interactive Dashboard Capabilities
+---
 
-✅ Production Monitoring
-✅ Rejection Analysis
-✅ Machine Performance Tracking
-✅ Department-wise Analysis
-✅ Time-Series Trend Analysis
-✅ Work Order Tracking
-✅ Shift Performance Monitoring
-✅ Dynamic Filtering & Drill-down
-✅ KPI Cards & Executive Summary
-✅ Production Efficiency Dashboard
+# 📂 Dataset Information
 
-🔍 Key Business Insights
-Sample Business Insights
-Certain machines contribute significantly to higher rejection rates.
-Production efficiency varies across departments and shifts.
-Some work centers experience repeated operational bottlenecks.
-Delayed work orders impact delivery timelines.
-Rejection quantity directly affects manufacturing cost.
-Peak production periods show improved operational efficiency.
-📢 Recommendations
-Strategic Recommendations
-Optimize underperforming machines
-Reduce rejection through quality control measures
-Improve preventive maintenance scheduling
-Implement real-time production monitoring
-Enhance shift allocation strategy
-Focus on high-performing production units
-Reduce operational downtime
+The project contains a star schema-based manufacturing dataset with fact and dimension tables.
+
+## Fact Table
+
+### `fact_Production`
+
+Contains transactional production-level data including:
+
+* Production documents
+* Buyers
+* Customers
+* Employees
+* Machines
+* Operations
+* Departments
+* Delivery status
+* Production quantities
+
+## Dimension Tables
+
+| Table Name     | Description                          |
+| -------------- | ------------------------------------ |
+| dim_Buyer      | Buyer information and region details |
+| dim_Customer   | Customer details and customer types  |
+| dim_Employee   | Employee and department information  |
+| dim_Operation  | Manufacturing operation details      |
+| dim_Machine    | Machine type and operational status  |
+| dim_Department | Department-level information         |
+| dim_Item       | Product and item category details    |
+| dim_Date       | Date hierarchy for time analysis     |
+
+---
+
+# 📊 Key Business KPIs
+
+The dashboard focuses on the following KPIs:
+
+* Total Production Quantity
+* Total Operational Cost
+* Production Efficiency
+* Delivery Performance
+* Machine Utilization Rate
+* Department-wise Production
+* Employee Productivity
+* Buyer-wise Revenue Contribution
+* Monthly & Quarterly Trends
+* Production Delay Analysis
+
+---
+
+# 📈 Dashboard Features
+
+## Power BI Dashboard
+
+### Key Features
+
+* Interactive KPI cards
+* Department-wise analysis
+* Production trend analysis
+* Delivery status tracking
+* Dynamic filters and slicers
+* Machine performance monitoring
+* Monthly and yearly trend analysis
+
+### Power BI Skills Used
+
+* Data Modeling
+* DAX Measures
+* Power Query
+* Calculated Columns
+* Drill-through Analysis
+* Conditional Formatting
+* Interactive Visualizations
+
+---
+
+## Tableau Dashboard
+
+### Key Features
+
+* Storytelling dashboards
+* Trend analysis visualizations
+* Production performance charts
+* Interactive filters
+* Geographic and category analysis
+* Operational insights
+
+### Tableau Skills Used
+
+* Parameters
+* Filters
+* Calculated Fields
+* Dashboard Actions
+* Story Points
+* Advanced Visualizations
+
+---
+
+# 🐍 Python Analysis
+
+Python was used for:
+
+* Data cleaning
+* Missing value handling
+* Data preprocessing
+* Exploratory Data Analysis (EDA)
+* Data transformation
+* Data validation
+
+### Python Libraries Used
+
+```python
+pandas
+numpy
+matplotlib
+seaborn
+openpyxl
+```
+
+---
+
+# 🗄️ SQL Analysis
+
+SQL was used to:
+
+* Extract manufacturing KPIs
+* Analyze production trends
+* Calculate operational metrics
+* Perform joins between fact and dimension tables
+* Create business reports
+
+### Example SQL Concepts Used
+
+* Joins
+* CTEs
+* Aggregate Functions
+* Window Functions
+* CASE Statements
+* Group By Analysis
+* KPI Calculations
+
+---
+
+# 📉 Business Insights Generated
+
+Some major insights generated from the project:
+
+* Identified departments with highest production efficiency
+* Detected delayed delivery patterns
+* Analyzed machine utilization and downtime
+* Evaluated employee productivity trends
+* Tracked monthly production growth
+* Identified top-performing buyers and customers
+* Improved operational visibility using dashboards
+
+---
+
+# 🧠 Skills Demonstrated
+
+## Data Analytics Skills
+
+* Data Cleaning
+* Data Modeling
+* Data Visualization
+* Dashboard Design
+* Business Intelligence
+* Exploratory Data Analysis
+* KPI Development
+* Report Automation
+
+## Technical Skills
+
+* Python
+* SQL
+* Power BI
+* Tableau
+* Excel
+* DAX
+* Power Query
+
+---
+
+# 📷 Dashboard Preview
+
+*Add your dashboard screenshots here.*
+
+Example:
+
+```md
+![Dashboard Screenshot](dashboard.png)
+```
+
+---
+
+# 📁 Project Structure
+
+```bash
+Manufacturing-Analysis-Project/
+│
+├── Dataset/
+│   └── Manufacturing Project Data.xlsx
+│
+├── PowerBI/
+│   └── Manufacturing Dashboard.pbix
+│
+├── Tableau/
+│   └── Manufacturing Dashboard.twbx
+│
+├── Python/
+│   └── Data Cleaning & EDA.ipynb
+│
+├── SQL/
+│   └── KPI Queries.sql
+│
+├── Images/
+│   └── Dashboard Screenshots
+│
+└── README.md
+```
+
+---
+
+# 🎯 Project Outcome
+
+This project demonstrates how manufacturing data can be transformed into actionable insights using modern data analytics tools.
+
+The dashboards provide decision-makers with:
+
+* Better operational visibility
+* Faster decision-making
+* Improved production monitoring
+* Enhanced efficiency tracking
+* Business performance optimization
+
+---
+
+# 💼 Portfolio & Resume Value
+
+This project highlights practical industry-level experience in:
+
+* Manufacturing Analytics
+* Business Intelligence
+* Data Visualization
+* SQL Query Optimization
+* Dashboard Development
+* End-to-End Data Analytics Workflow
+
+It is suitable for showcasing in:
+
+* GitHub Portfolio
+* Data Analyst Resume
+* LinkedIn Projects Section
+* Interview Demonstrations
+
+---
+
+# 🔥 Future Enhancements
+
+Possible future improvements:
+
+* Real-time production monitoring
+* Predictive maintenance analysis
+* Machine learning forecasting models
+* Automated reporting pipelines
+* Cloud database integration
+* Advanced KPI forecasting
+
+---
+
+# 👨‍💻 Author
+
+## Omkar Salunke
+
+### Data Analyst | Power BI | SQL | Python | Tableau
+
+If you like this project, feel free to ⭐ this repository.
